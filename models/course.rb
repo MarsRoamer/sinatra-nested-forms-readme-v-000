@@ -13,4 +13,4 @@ class Course
     @@courses
   end
 
-end 
+end
