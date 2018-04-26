@@ -1,20 +1,16 @@
-class Course 
-  attr_reader :name, :topic 
+class Course
+  attr_reader :name, :topic
 
   @@courses = []
 
   def initialize(args)
     @name = args[:name]
     @topic = args[:topic]
-    @@courses << self 
+    @@courses << self
   end
 
-  def self.all 
-    @@courses 
+  def self.all
+    @@courses
   end
-
-
-
-
 
 end 
