@@ -6,14 +6,14 @@ class App < Sinatra::Base
     erb :index
   end
 
-  post "/student" do 
+  post "/student" do
     @student = Student.new(params[:student])
 
     params[:student][:courses].each do |details|
       Course.new(details)
-    end 
+    end
 
-    @courses = Course.all 
+    @courses = Course.all
 
     erb :student
   end
